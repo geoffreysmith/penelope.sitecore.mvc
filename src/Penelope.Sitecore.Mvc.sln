@@ -3,6 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Penelope.Web", "Penelope.Web\Penelope.Web.csproj", "{C2EF7F4B-AF23-4ACF-8C1F-4833584BFE63}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Penelope.Web.Tests", "Penelope.Tests\Penelope.Web.Tests.csproj", "{F90253A4-81BC-452D-93F1-F8335A47BA38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{5F8E260A-2938-424D-8451-9FFEDF55BF66}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +20,10 @@ Global
 		{C2EF7F4B-AF23-4ACF-8C1F-4833584BFE63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2EF7F4B-AF23-4ACF-8C1F-4833584BFE63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2EF7F4B-AF23-4ACF-8C1F-4833584BFE63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F90253A4-81BC-452D-93F1-F8335A47BA38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F90253A4-81BC-452D-93F1-F8335A47BA38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F90253A4-81BC-452D-93F1-F8335A47BA38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F90253A4-81BC-452D-93F1-F8335A47BA38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

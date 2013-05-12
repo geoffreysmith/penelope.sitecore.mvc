@@ -1,1 +1,0 @@
-powershell -inputformat none -NoProfile -ExecutionPolicy unrestricted -command ".\deploy\installsitecore.ps1"
