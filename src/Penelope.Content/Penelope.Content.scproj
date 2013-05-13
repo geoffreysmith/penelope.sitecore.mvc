@@ -27,6 +27,10 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <SitecoreDeployFolder>C:\_SITES\PenelopeSitecore.local\Website</SitecoreDeployFolder>
+    <SitecoreWebUrl>http://local.penelopesitecore.com/</SitecoreWebUrl>
+    <SitecoreAccessGuid>8b27f785-ae79-48bc-a8ec-6b8830eaf1b7</SitecoreAccessGuid>
+    <InstallSitecoreConnector>True</InstallSitecoreConnector>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>

@@ -1,0 +1,14 @@
+﻿@using Sitecore.Mvc
+@inherits WebViewPage
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test title</title>
+</head>
+    <body>
+        <div>Hello from the layout</div>
+        <div>
+        @Html.Sitecore().Placeholder("Body")
+        </div>
+    </body>
+</html>

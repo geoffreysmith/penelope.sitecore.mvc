@@ -39,6 +39,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\packages\Castle.Core.3.2.0\lib\net40-client\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\packages\Castle.Windsor.3.2.0\lib\net40\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper">
+      <HintPath>..\packages\Glass.Mapper.0.0.0.5\lib\net40\Glass.Mapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper.Sc">
+      <HintPath>..\packages\Glass.Mapper.Sc.3.0.2.5\lib\net40\Glass.Mapper.Sc.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper.Sc.CastleWindsor">
+      <HintPath>..\packages\Glass.Mapper.Sc.CastleWindsor.3.0.3.5\lib\net40\Glass.Mapper.Sc.CastleWindsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper.Sc.Razor">
+      <HintPath>..\packages\Glass.Mapper.Sc.Razor.3.0.2.4\lib\net40\Glass.Mapper.Sc.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -46,6 +64,9 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorEngine">
+      <HintPath>..\packages\RazorEngine.3.2.0\lib\net40\RazorEngine.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Analytics">
       <HintPath>..\..\lib\Sitecore.Analytics.dll</HintPath>
@@ -125,25 +146,33 @@
     <Reference Include="Telerik.Web.UI">
       <HintPath>..\..\lib\Telerik.Web.UI.dll</HintPath>
     </Reference>
+    <Reference Include="WebActivatorEx">
+      <HintPath>..\packages\WebActivatorEx.2.0.1\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\GlassMapperSc.cs" />
+    <Compile Include="App_Start\GlassMapperScCustom.cs" />
+    <Compile Include="Controllers\HomePageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\HomePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Data\Packages\Glass.Mapper.Sc.Razor.Package.xml" />
     <Content Include="Global.asax" />
+    <Content Include="Sitecore Modules\Shell\Glass\Mapper\Razor\BehindRazor.xml" />
+    <Content Include="Sitecore Modules\Shell\Glass\Mapper\Razor\DynamicRazor.xml" />
+    <Content Include="Sitecore Modules\Shell\Glass\Mapper\Razor\TypedRazor.xml" />
     <Content Include="Web.config" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="App_Config\ConnectionStrings.config">
       <SubType>Designer</SubType>
@@ -163,6 +192,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\Sitecore.Mvc.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Config\Include\Glass.Mapper.Sc.Mvc.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config" />
+    <Content Include="Sitecore Modules\Shell\Glass\Mapper\Razor\Templates\TypedRazorTemplate.cshtml.temp" />
+    <Content Include="Sitecore Modules\Shell\Glass\Mapper\Razor\Templates\DynamicRazorTemplate.cshtml.temp" />
+    <Content Include="Sitecore Modules\Shell\Glass\Mapper\Razor\Templates\BehindRazorTemplate.cshtml.temp" />
+    <Content Include="Sitecore Modules\Shell\Glass\Mapper\Razor\Templates\BehindRazorTemplate.cshtml.cs.temp" />
+    <Content Include="Data\Packages\Glass.Mapper.Sc.Razor.Package.zip" />
+    <Content Include="App_Config\Include\Glass.Mapper.Sc.Razor.config" />
+    <Content Include="Views\HomePage\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\Deploy.pubxml" />
+    <Content Include="Views\Layouts\_Layout.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
